@@ -1,10 +1,6 @@
 import java.util.Random;
-import java.util.Scanner;
 
 public class second {
-
-  public static Scanner in = new Scanner(System.in);
-
   public static int rand(int min, int max) {
     Random random = new Random();
 
@@ -65,7 +61,5 @@ public class second {
     print_arr(arr);
 
     select_sort(arr);
-
-    in.close();
   }
 }
