@@ -33,60 +33,38 @@ public class second {
   }
 
   public static void select_sort(int[] arr) {
-    int loop = 0;
-
-    int smallest_index = 0, greatest_index = 0, smallest_el = 0, greatest_el =
-      0;
-
-    int[] indexed = new int[arr.length];
-
-    boolean sorted = false;
-
     int indexor = 0;
 
-    while (indexor < indexed.length) {
-      for (int i = loop; i < arr.length; i++) {
-        boolean contained = false;
+    while(indexor < arr.length){
+        int smallest_el = arr[indexor], smallest_index = indexor;
+        int idx_el = arr[indexor];
 
-        for (int j = 0; j < indexed.length; j++){
-            if(contained){
-                continue;
+        for (int i = indexor; i < arr.length; i++){
+            int el = arr[i];
+
+            if(el < smallest_el){
+                smallest_el = el;
+                smallest_index = i;
             }
-
-            if(i == indexed[j]){
-                contained = true;
-            }
         }
 
-        if(contained){
-            continue;
-        }
+        arr[indexor] = smallest_el;
+        arr[smallest_index] = idx_el;
 
-        if (arr[i] < arr[smallest_index]) {
-          smallest_index = i;
-          smallest_el = arr[i];
-        } else if (arr[i] > greatest_index) {
-          greatest_index = i;
-          greatest_el = arr[i];
-        }
-      }
-
-      arr[greatest_index] = smallest_el;
-      arr[smallest_index] = greatest_el;
-
-      indexed[indexor] = smallest_index;
-      indexor++;
-      indexed[indexor] = greatest_index;
-      indexor++;
-      
-      System.out.println(indexor);
+        indexor ++;
     }
 
+    System.out.print("Sorted array: ");
     print_arr(arr);
   }
 
   public static void main(String[] args) {
-    select_sort(gen_arr());
+    int[] arr = gen_arr();
+
+    System.out.print("Generated array: ");
+    print_arr(arr);
+
+    select_sort(arr);
 
     in.close();
   }
