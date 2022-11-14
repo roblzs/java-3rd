@@ -12,7 +12,7 @@ public class second {
   }
 
   public static int[] gen_arr() {
-    int[] arr = new int[5];
+    int[] arr = new int[20];
 
     for (int i = 0; i < arr.length; i++) {
       arr[i] = rand(0, 100);
