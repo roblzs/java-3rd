@@ -8,7 +8,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-class Pirmais {
+class first {
 
   public static Scanner in = new Scanner(System.in);
 
@@ -129,8 +129,27 @@ class Pirmais {
 }
 ```
 
-2. Uzrakstīt funkciju, kas realizē masīva šķirošanas izvēlēs metodi (Select Sort). Noteikt
-   algoritma efektivitāti
+1. reize (100 elementi)
+
+![image](https://user-images.githubusercontent.com/62758448/206890396-ade894b9-9a33-4d65-b321-f2f1cc020dfd.png)
+
+
+2. reize (200 elementi)
+
+![image](https://user-images.githubusercontent.com/62758448/206890418-c142cb89-8fba-4ab6-9f9f-d5dcd7b55862.png)
+
+
+3. reize (1000 elementi)
+
+![image](https://user-images.githubusercontent.com/62758448/206890431-f3771a47-a202-4c3c-a3c6-7beabe67159c.png)
+
+
+Linear search ar barjeru bija ātraks 1. reizē, bet pārējās Linear search
+
+![image](https://user-images.githubusercontent.com/62758448/206890444-145dc996-5b3a-4742-8049-05451b9f3010.png)
+
+
+2. Uzrakstīt funkciju, kas realizē masīva šķirošanas izvēlēs metodi (Select Sort). Noteikt algoritma efektivitāti
 
 ```java
 import java.util.Random;
@@ -205,6 +224,8 @@ public class second {
   }
 }
 ```
+
+![image](https://user-images.githubusercontent.com/62758448/206890467-bb587f88-9d63-43bc-a31d-2d6f0a439ddc.png)
 
 3. Uzrakstīt funkciju, kas realizē masīva šķirošanas Hoāra metodi (Quick Sort). Noteikt algoritma efektivitāti
 
@@ -286,13 +307,15 @@ class third {
 }
 ```
 
+![image](https://user-images.githubusercontent.com/62758448/206890477-1fa88780-2bf8-4225-a8e3-6b2e80638ef7.png)
+
 **Select Sort vs Quick Sort, kurš ātrāks?**
 
 ```java
 import java.util.Random;
 import java.util.Scanner;
 
-public class otrais {
+public class Main {
 
   public static int rand(int min, int max) {
     Random random = new Random();
@@ -403,3 +426,5 @@ public class otrais {
 ```
 
 **Quick sort ātrāks**
+
+![image](https://user-images.githubusercontent.com/62758448/206890501-c5e816b0-b6f5-46b8-93bf-31f75e5d2d8b.png)
