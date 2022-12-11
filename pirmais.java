@@ -109,6 +109,7 @@ class Pirmais {
     }
 
     System.out.println("Execution times:");
+    System.out.println("LS     LSWB:");
 
     for (long[] vals : times) {
       String res = vals[0] < vals[1]
