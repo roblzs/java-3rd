@@ -129,22 +129,27 @@ class first {
 }
 ```
 
-
 1. reize (100 elementi)
+
 ![image](https://user-images.githubusercontent.com/62758448/206890396-ade894b9-9a33-4d65-b321-f2f1cc020dfd.png)
 
+
 2. reize (200 elementi)
+
 ![image](https://user-images.githubusercontent.com/62758448/206890418-c142cb89-8fba-4ab6-9f9f-d5dcd7b55862.png)
 
+
 3. reize (1000 elementi)
+
 ![image](https://user-images.githubusercontent.com/62758448/206890431-f3771a47-a202-4c3c-a3c6-7beabe67159c.png)
 
+
 Linear search ar barjeru bija ātraks 1. reizē, bet pārējās Linear search
+
 ![image](https://user-images.githubusercontent.com/62758448/206890444-145dc996-5b3a-4742-8049-05451b9f3010.png)
 
 
-2. Uzrakstīt funkciju, kas realizē masīva šķirošanas izvēlēs metodi (Select Sort). Noteikt
-   algoritma efektivitāti
+2. Uzrakstīt funkciju, kas realizē masīva šķirošanas izvēlēs metodi (Select Sort). Noteikt algoritma efektivitāti
 
 ```java
 import java.util.Random;
